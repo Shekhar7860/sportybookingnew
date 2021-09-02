@@ -3,12 +3,13 @@ import Home from './components/Home'
 
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Search from './components/Search'
-import Facility from './components/Facility'
-import Mybooking from './components/Mybooking'
-import Messages from './components/Messages'
-import Profile from './components/Profile'
-
+import Search from './components/user/Search'
+import Facility from './components/user/Facility'
+import Mybooking from './components/user/Mybooking'
+import Messages from './components/user/Messages'
+import Profile from './components/user/Profile'
+import OwnerHome from './components/owner/OwnerHome'
+import OwnerCalendar from './components/owner/OwnerCalender'
 
 const App = () => {
     return (
@@ -21,6 +22,8 @@ const App = () => {
                     <Route path="/mybooking" ><Mybooking /></Route>
                     <Route path="/messages" ><Messages /></Route>
                     <Route path="/profile" ><Profile /></Route>
+                    <Route path="/owner" ><OwnerHome /> </Route>
+                    <Route path="/calender" ><OwnerCalendar /> </Route>
                 </Switch>
             </Router>
         </div>
